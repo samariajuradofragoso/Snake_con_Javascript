@@ -83,7 +83,7 @@ const food = {
 
 function checkEat(){
     if(snake[0].x === food.x && snake[0].y === food.y){
-        eating.Audio();
+        eating.play();
         snake.push({ ...snake[1] });
         food.random();
         
